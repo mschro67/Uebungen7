@@ -3,21 +3,34 @@
 package h2;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class h2_main{
     public static void main(String[] args){
-        int[] a={1,2,3,4,5},b={1,2,3,4,5};
-        System.out.println(Arrays.compare(a,b));
+        Scanner s=new Scanner(System.in);
+
+        int[] a={1,2,3,4,5},b={1,3,3,4,5};
+
+        System.out.print("Start: ");
+        int start=Integer.parseInt(s.nextLine());
+
+        System.out.print("End: ");
+        int end=Integer.parseInt(s.nextLine());
+
+        s.close();
+
+        System.out.println("Change: "+Arrays.toString(change(a,b,start,end)));
     }
-    public static void change(int[] a,int[] b,int start,int end){
-        if (end>start&&!(Arrays.compare(a,b)==0)){
+    public static int[] change(int[] a,int[] b,int start,int end){
+        int[] placeholder=new int[0];
+        if ((end>start)&&(!(Arrays.compare(a,b)==0))){
             int[] c = Arrays.copyOf(a,a.length);
-        }else if (end>start&&a==b){
+            return c;
+        }else if ((end>start)&&(Arrays.compare(a,b)==0)){
             Arrays.sort(a);
             int[] c=Arrays.copyOfRange(a,start,end);
-        }else if (end<=start){
-            int[] c=new int[0];
+            return c;
         }
-        //return c;
+        return placeholder;
     }
 }
