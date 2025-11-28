@@ -8,8 +8,7 @@ public class h1_main{
     public static void main(String[] args){
         System.out.print("Input: ");
         Scanner s = new Scanner(System.in);
-        Zahl a = new Zahl();
-        a.num=Integer.parseInt(s.nextLine());
+        Zahl a = new Zahl(Integer.parseInt(s.nextLine()));
         s.close();
         a.setEven();
         a.setPositive();
