@@ -19,7 +19,7 @@ public class h2_main{
 
         s.close();
 
-        System.out.println("Change: "+Arrays.toString(change(a,b,start,end)));
+        System.out.println("\na: "+Arrays.toString(a)+"\nb: "+Arrays.toString(b)+"\nChange: "+Arrays.toString(change(a,b,start,end)));
     }
     public static int[] change(int[] a,int[] b,int start,int end){
         int[] placeholder=new int[0];

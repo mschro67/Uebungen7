@@ -9,10 +9,14 @@ public class Zahl{
     public void setEven(){
         this.even=(num%2==0);
     }
-    public void setPositive(){
-        this.positive=(num>0);
-    }
+    public void setPositive(){this.positive=(num>0);}
     public void setSmall(){
         this.small=(num<100);
+    }
+
+    public void setAll(){
+        setEven();
+        setSmall();
+        setPositive();
     }
 }
