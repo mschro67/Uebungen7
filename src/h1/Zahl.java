@@ -7,12 +7,12 @@ public class Zahl{
     public int num;
 
     public void setEven(){
-        even=(num%2==0);
+        this.even=(num%2==0);
     }
     public void setPositive(){
-        positive=(num>0);
+        this.positive=(num>0);
     }
     public void setSmall(){
-        small=(num<100);
+        this.small=(num<100);
     }
 }
