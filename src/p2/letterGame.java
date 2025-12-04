@@ -1,3 +1,5 @@
+//by mschro67
+
 package p2;
 
 public class letterGame{
@@ -15,10 +17,10 @@ public class letterGame{
         this.word=placeholder;
     }
 
-    public int[] findCode(String string) {
-        int[] a = new int[string.length()];
+    public int[] findCode(String word) {
+        int[] a = new int[word.length()];
         for (int x=0;x<a.length;x++){
-            a[x]=Integer.valueOf(this.keyString.indexOf(string.charAt(x)));
+            a[x]=Integer.valueOf(this.keyString.indexOf(word.charAt(x)));
         }
         return a;
     }

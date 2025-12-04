@@ -1,4 +1,4 @@
-//mschro67
+//by mschro67
 
 package p2;
 
@@ -11,6 +11,6 @@ public class p2_main{
         int[] a={0,1,2,3,0,1,2};
         game.setword(a);
 
-        System.out.println("keyString: \""+game.keyString+"\"\na: "+Arrays.toString(a)+"\nword: \""+game.word+"\"");
+        System.out.println("keyString: \""+game.keyString+"\"\na: "+Arrays.toString(game.findCode(game.word))+"\nword: \""+game.word+"\"");
     }
 }

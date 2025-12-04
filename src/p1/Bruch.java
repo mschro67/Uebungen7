@@ -1,3 +1,5 @@
+//by mschro67
+
 package p1;
 
 public class Bruch{
