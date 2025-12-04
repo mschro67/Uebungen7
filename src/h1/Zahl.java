@@ -14,7 +14,7 @@ public class Zahl{
         this.small=(num<100);
     }
 
-    public void setAll(){
+    public void Zahl(){
         setEven();
         setSmall();
         setPositive();

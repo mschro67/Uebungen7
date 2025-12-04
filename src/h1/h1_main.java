@@ -9,9 +9,8 @@ public class h1_main{
         System.out.print("Input: ");
         Scanner s = new Scanner(System.in);
 
-        Zahl a = new Zahl();
+        Zahl a=new Zahl();
         a.num=Integer.parseInt(s.nextLine());
-        a.setAll();
 
         s.close();
 
