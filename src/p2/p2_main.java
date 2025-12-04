@@ -2,8 +2,15 @@
 
 package p2;
 
+import java.util.Arrays;
+
 public class p2_main{
     public static void main(String[] args) {
-        System.out.println("Nothing...");
+        letterGame game=new letterGame("ABC ");
+
+        int[] a={0,1,2,3,0,1,2};
+        game.setword(a);
+
+        System.out.println("keyString: \""+game.keyString+"\"\na: "+Arrays.toString(a)+"\nword: \""+game.word+"\"");
     }
 }
